@@ -19,6 +19,6 @@ public class TransactionSteps {
 
     @Then("verify the transaction is getting updated in database")
     public void verify_the_transaction_is_getting_updated_in_database() {
-
+        transactionPage.verifyTransactionIsUpdatedInDatabase();
     }
 }
