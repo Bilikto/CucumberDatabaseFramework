@@ -10,7 +10,7 @@ public class HomeSteps {
 
     @Then("verify user is on Home page")
     public void verify_user_is_on_home_page() {
-        homePage.verifyUserIsOnHomePage();
+        homePage.verifyPage();
     }
 
     @When("user click Withdraw menu")

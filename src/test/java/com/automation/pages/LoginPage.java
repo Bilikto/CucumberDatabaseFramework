@@ -2,6 +2,7 @@ package com.automation.pages;
 
 import com.automation.utils.ConfigFileReaderUtils;
 import com.automation.utils.DriverUtils;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -11,7 +12,7 @@ public class LoginPage extends BasePage {
     WebElement userNameInput;
 
     @FindBy(id="password")
-    WebElement password;
+    WebElement passwordInput;
 
     @FindBy(id="submit")
     WebElement submitBtn;
@@ -25,7 +26,12 @@ public class LoginPage extends BasePage {
     }
 
     public void enterPassword() {
-        password.sendKeys(ConfigFileReaderUtils.getProperty("app.password"));
+        passwordInput.sendKeys(ConfigFileReaderUtils.getProperty("app.password"));
+    }
+
+    public void verifyPage() {
+        Assert.assertTrue(userNameInput.isDisplayed());
+        Assert.assertTrue(passwordInput.isDisplayed());
     }
 
     public void clickOnSignInButton() {

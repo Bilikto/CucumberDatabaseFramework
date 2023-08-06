@@ -9,7 +9,7 @@ public class TransactionSteps {
 
     @Then("verify user is on Transaction page")
     public void verify_user_is_on_transaction_page() {
-        transactionPage.verifyTransactionsPage();
+        transactionPage.verifyPage();
     }
 
     @Then("verify the withdraw amount is displayed in the transaction history")

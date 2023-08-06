@@ -10,7 +10,7 @@ public class WithdrawSteps {
 
     @Then("verify user is on Withdraw page")
     public void verify_user_is_on_withdraw_page() {
-        withdrawPage.verifyWithdrawPage();
+        withdrawPage.verifyPage();
     }
 
     @When("user select Account for Withdraw")

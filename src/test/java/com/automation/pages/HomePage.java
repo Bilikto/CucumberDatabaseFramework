@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
     @FindBy(id="withdraw-menu-item")
     WebElement withdrawMenu;
 
-    public void verifyUserIsOnHomePage() {
+    public void verifyPage() {
         Assert.assertTrue(dashboardTitle.isDisplayed());
     }
 

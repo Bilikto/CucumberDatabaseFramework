@@ -20,7 +20,7 @@ public class WithdrawPage extends BasePage {
     @FindBy(xpath="//div[@class='card-footer']/button[@type='submit']")
     WebElement submitBtn;
 
-    public void verifyWithdrawPage() {
+    public void verifyPage() {
         Assert.assertTrue(withdrawTitle.isDisplayed());
     }
 

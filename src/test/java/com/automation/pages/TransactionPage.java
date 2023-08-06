@@ -27,7 +27,7 @@ public class TransactionPage extends BasePage {
 
     private ResultSet res;
 
-    public void verifyTransactionsPage() {
+    public void verifyPage() {
         Assert.assertTrue(transactionsTable.isDisplayed());
     }
 
