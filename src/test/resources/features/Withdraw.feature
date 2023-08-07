@@ -1,5 +1,6 @@
 Feature: Transaction validation
 
+  @Regression
   Scenario: Verify user is able to withdraw funds
     Given user open website
     When user enter username
